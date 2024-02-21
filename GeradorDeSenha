@@ -1,0 +1,6 @@
+import secrets
+
+nova_senha = secrets.token_urlsafe(15)
+
+with open('senhas.txt', 'w') as arquivo:
+            arquivo.write(nova_senha) 
